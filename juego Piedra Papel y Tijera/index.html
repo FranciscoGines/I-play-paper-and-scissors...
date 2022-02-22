@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Piedra, papel, tijeras.</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="index.js"></script>
+    
+
+</head>
+
+<body>
+    <h1 style="margin:0 0 20px 0;"> Juego de Piedra - Papel - Tijeras</h1>
+    <button id="reiniciarPartida" style="margin: 0 50px 0 200px; font-size: 20px;float:left;"
+        onclick="ReiniciarPartida();">Reiniciar</button>
+    <p style="font-size:27px;margin: 20px 50px 0px 200px">Pulsa en el botón para reiniciar partida ...</p>
+    <div id="div1" class="cuadrado2" style="float:left; margin-left: 200px">
+        <h2>Elige una de las figuras</h2>
+        <div style="width:300px; margin:auto">
+            <div class="fotos">
+                <img id="eleccionPiedra" src="imagenes/piedra.png" alt="Piedra" style="width: 75px;height: 75px;"
+                    onclick="Jugar('piedra');" />
+            </div>
+            <div class="fotos">
+                <img id="eleccionPapel" src="imagenes/papel.png" alt="" style="width: 75px;height: 75px;"
+                    onclick="Jugar('papel');" />
+            </div>
+            <div class="fotos">
+                <img id="eleccionTijeras" src="imagenes/tijeras.png" alt="" style="width: 75px;height: 75px;"
+                    onclick="Jugar('tijeras');" />
+            </div>
+        </div>
+    </div>
+    <span></span>
+    <!-- //Principio aqui tenemos la caja de Partidas Jugadas -->
+    <div class="cuadrado2" style="float:right; margin-right:200px">
+        <h2 >Partidas jugadas: <span id="partidasJugadas">0</span></h2>
+        <br />
+        <h3>Humano:<span id="humano">0</span></h3>
+        <h3>C.P.U:<span id="cpu">0</span></h3>
+        <h3>Empate:<span id="empate">0</span></h3> 
+    </div>
+    <!-- Fin caja de Partidas Jugadas -->
+    <div style="width: 100%;">
+        <h1 id="resultadoPartida">...</h1>
+    </div>
+    <div class="cuadrado" style="float:left; margin-left: 200px; margin-top: 0px;">
+        <h2>Esta es tu elección</h2>
+        <div style="width: 250px; height: 250px; margin:auto;">
+            <img id="eleccionJugador" src="imagenes/nada.png" alt="" />
+        </div>
+    </div>
+    <div class="cuadrado" style="float:right; margin-right: 200px;margin-top: 0px;">
+        <h2>Esta es la elección de la C.P.U</h2>
+        <div style="width: 250px; height: 250px; margin:auto;">
+            <img id="eleccionCpu" src="imagenes/nada.png" alt="" />
+        </div>
+    </div>
+    
+</body>
+
+</html>

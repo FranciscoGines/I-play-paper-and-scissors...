@@ -1,0 +1,48 @@
+h1{
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    color:brown;
+    float:left
+}
+h2,h3{
+    font-size: 20px;
+    text-align: center;
+    color:black;
+margin:5px;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    color:blueviolet;
+margin:5px;
+}
+    .cuadrado{
+        margin-top:80px;
+       
+width: 400px;
+height: 300px;
+border-radius: 20%;
+background-color: white;
+border: 3px solid darkgreen ;
+    }
+    .cuadrado2{
+        margin-top:50px;
+width: 400px;
+height: 150px;
+border-radius: 20%;
+background-color: white;
+border: 3px solid brown;
+
+}
+.fotos{
+        width: 75px;
+        height: 75px;
+        background-color: whitesmoke;
+        float:left;
+        border: 2px solid lightgrey;
+        margin:15px 15px 0 5px;
+}
+.fotos:hover{
+        border: 2px solid green;
+}
